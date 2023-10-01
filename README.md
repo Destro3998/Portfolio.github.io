@@ -1,7 +1,7 @@
 # Portfolio.github.io
 Welcome to my personal portfolio website! This site showcases my journey, skills, and projects in the world of software development and design.
 
-Features:
+# Features:
 
 About Me: Get to know a little about my background, interests, and my journey in the tech world.
 
