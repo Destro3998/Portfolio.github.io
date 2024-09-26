@@ -20,89 +20,184 @@
       rel="stylesheet"
     />
     <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
+    src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="styles.css" />
     <title>Shubham Jain</title>
   </head>
   <body class="light" id="top">
     <header class="header center">
-      <h3>
-        <a>SJ.</a
-        >
+      <div class="logo">
+        <a href="#top">SJ</a>
+      </div>
       </h3>
 
       <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
+    <ul class="nav__list center">
+      <span class="nav__list-item">
+        <a class="link link--nav" href="#projects">Projects</a>
+      </span>
+      <span class="nav__list-item">
+        <a class="link link--nav" href="#skills">Skills</a>
+      </span>
+      <span class="nav__list-item">
+        <a class="link link--nav" href="#contact">Contact</a>
+      </span>
+    </ul>
 
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
+        <!-- Theme Toggle -->
+    <button type="button" aria-label="toggle theme" class="btn btn--icon">
+      <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+    </button>
 
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
+    <!-- Hamburger Menu for Mobile -->
+    <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+      <i aria-hidden="true" class="fas fa-bars"></i>
+    </button>
+  </nav>
     </header>
 
     <main>
       <!-- About -->
-      <div class="about center">
-        <h1>Hi, I am <span class="about__name">Shubham Jain.</span></h1>
-        <h2 class="about__role">An aspiring CS Student.</h2>
-        <p class="about__desc">
-          I am currently a 3rd year CompScience student at University of Saskatechwan with deep interest
-          in Algorithms and understanding of their application in software development cycle. I am detail
-          oriented, responsible, and eager leaner with hands on experience in defining requirements, designing,
-          implementing, testing, and delivering complex projects using a variety of programming languages.
-          In my spare time I like playing vollyball, table tennis and to read non-fictional literatures based
-          on life experiences.
+<div class="about center">
+  <div class="about__content">
+    <div class="about__text">
+      <h1>Hi, I am <span class="about__name">Shubham Jain.</span></h1>
+      <h2 class="about__role">An enthusiast CS student.</h2>
+      <p class="about__desc">
+        "I am a senior year Computer Science student at the University of Saskatchewan with deep interest in algorithms and their applications in software development. I enjoy solving complex problems and implementing efficient solutions."
+      </p>
+      <div class="about__contact center">
 
-        </p>
+        <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  rel="stylesheet"
+/>
 
-        <div class="about__contact center">
-          <a href="https://github.com/Destro3998/Internship-Resume">
-            <span class="btn btn--outline">resume</span>
-          </a>
-
-          <a
-            href="https://github.com/Destro3998"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-
-          <a
-            href="https://ca.linkedin.com/in/shubham-jain-208823126"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a>
-        </div>
+        <a href="https://github.com/Destro3998/Internship-Resume">
+          <span class="btn btn--outline">resume</span>
+        </a>
+        <a href="https://github.com/Destro3998" aria-label="github" class="link link--icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://ca.linkedin.com/in/shubham-jain-208823126" aria-label="linkedin" class="link link--icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
       </div>
+    </div>
+    <div class="about__image">
+      <img src="images/headshot.JPG" alt="Shubham Jain" />
+    </div>
+  </div>
+</div>
+
 
       <!-- Projects -->
       <section id="projects" class="section projects">
         <h2 class="section__title">Projects</h2>
 
         <div class="projects__grid">
+
+          <div class="project">
+            <h3>OS Hardware Monitor</h3>
+            <p class="project__description">
+              A web app to display an autoupdating Hardware Monitor of my MacOS machine, showing data about what is happening on the device.            <ul class="project__stack">
+              <span class="project__stack-item">Go</span>
+              <span class="project__stack-item">JavaScript</span>
+              <span class="project__stack-item">Docker</span>
+            </ul>
+          
+            <a
+              href="https://github.com/Destro3998/OS-Hardware-Monitor"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Channel Chat</h3>
+            <p class="project__description">
+              A social platform where users can sign up, log in, and post their daily activities, texts, and images. Users can socialize with others in the channel and interact through shared posts.  </p>
+            <ul class="project__stack">
+              <span class="project__stack-item">Axios.js</span>
+              <span class="project__stack-item">Node.js</span>
+              <span class="project__stack-item">Express.js</span>
+              <span class="project__stack-item">.NET</span>
+              <span class="project__stack-item">SQL DB</span>
+              <span class="project__stack-item">Docker</span>
+            </ul>
+          
+            <a
+              href="https://github.com/Destro3998/Channel-Chat"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Prop Shop</h3>
+            <p class="project__description">
+              An e-commerce platform that allows users to view items, add them to a shopping cart and make reservations which are fulfilled at a warehouse.
+            </p>
+            <ul class="project__stack">
+              <span class="project__stack-item">Node.js</span>
+              <span class="project__stack-item">Express.js</span>
+              <span class="project__stack-item">MongoDB</span>
+              <span class="project__stack-item">Handlebars</span>
+            </ul>
+          
+            <a
+              href="https://github.com/Destro3998/PropShop"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Flick Picks</h3>
+            <p class="project__description">
+              A movie recommendation system seeks to transform the way users discover films tailored to their tastes.
+            </p>
+            <ul class="project__stack">
+              <span class="project__stack-item">React.js</span>
+              <span class="project__stack-item">Python</span>
+              <span class="project__stack-item">Flask</span>
+            </ul>
+          
+            <a
+              href="https://github.com/Destro3998/Flick-Picks"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Lyric Master</h3>
+            <p class="project__description">
+              A web application provides users the capability to search for songs by inputting textual lyrics 
+              offering a comprehensive music discovery experience.
+            </p>
+            <ul class="project__stack">
+              <span class="project__stack-item">React.js</span>
+              <span class="project__stack-item">Node.js</span>
+            </ul>
+          
+            <a
+              href="https://github.com/Destro3998/Lyric-Master"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
           
           <div class="project">
             <h3>Drum Kit</h3>
@@ -111,9 +206,9 @@
               This site was made for fun , use it however you wish.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">HTML5</li>
-              <li class="project__stack-item">CSS</li>
-              <li class="project__stack-item">JavaScript</li>
+              <span class="project__stack-item">HTML5</span>
+              <span class="project__stack-item">CSS</span>
+              <span class="project__stack-item">JavaScript</span>
             </ul>
 
             <a
@@ -133,7 +228,7 @@
               and perform image processing techniques.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
+              <span class="project__stack-item">Python</span>
 
             </ul>
 
@@ -155,7 +250,7 @@
               finding out contours. Finding area of contours to detect motion.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
+              <span class="project__stack-item">Python</span>
             </ul>
 
             <a
@@ -174,60 +269,20 @@
               more complex.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">HTML5</li>
-              <li class="project__stack-item">CSS</li>
-              <li class="project__stack-item">JavaScript</li>
+              <span class="project__stack-item">HTML5</span>
+              <span class="project__stack-item">CSS</span>
+              <span class="project__stack-item">JavaScript</span>
             </ul>
           
             <a
               href="https://github.com/Destro3998/Simon-Game"
-              aria-label="source code for project 1"
+              aria-label="source code"
               class="link link--icon"
             >
               <i aria-hidden="true" class="fab fa-github"></i>
             </a>
-          </div>
-          
-          <div class="project">
-            <h3>Lyric Master</h3>
-            <p class="project__description">
-              A web application provides users the capability to search for songs by inputting textual lyrics 
-              offering a comprehensive music discovery experience.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">React.js</li>
-              <li class="project__stack-item">Node.js</li>
-            </ul>
-          
-            <a
-              href="https://github.com/Destro3998/Lyric-Master"
-              aria-label="source code for project 2"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-          </div>
+          </div>    
 
-          <div class="project">
-            <h3>Flick Picks</h3>
-            <p class="project__description">
-              A movie recommendation system seeks to transform the way users discover films tailored to their tastes.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">React.js</li>
-              <li class="project__stack-item">Python</li>
-              <li class="project__stack-item">Flask</li>
-            </ul>
-          
-            <a
-              href="https://github.com/Destro3998/Flick-Picks"
-              aria-label="source code for project 3"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-          </div>
-          
         </div>
       </section>
 
@@ -235,35 +290,43 @@
       <section class="section skills" id="skills">
         <h2 class="section__title">Skills</h2>
         <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">AWS</li>
-          <li class="skills__list-item btn btn--plain">PowerBI</li>
+          <li class="skills__list-item btn btn--plain">AWS Architect</li>
+          <li class="skills__list-item btn btn--plain">Microsoft Power BI</li>
           <li class="skills__list-item btn btn--plain">Python</li>
           <li class="skills__list-item btn btn--plain">Java</li>
           <li class="skills__list-item btn btn--plain">C/C++</li>
           <li class="skills__list-item btn btn--plain">HTML5</li>
           <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">.NET</li>
           <li class="skills__list-item btn btn--plain">JavaScript</li>
           <li class="skills__list-item btn btn--plain">TypeScript</li>
           <li class="skills__list-item btn btn--plain">React.js</li>
+          <li class="skills__list-item btn btn--plain">Express.js</li>
+          <li class="skills__list-item btn btn--plain">Node.js</li>
           <li class="skills__list-item btn btn--plain">MongoDB</li>
           <li class="skills__list-item btn btn--plain">SQL</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">Node.js</li>
-          <li class="skills__list-item btn btn--plain">.NET</li>
-          <li class="skills__list-item btn btn--plain">Express</li>
-
-
+          <li class="skills__list-item btn btn--plain">Docker</li>
+          <li class="skills__list-item btn btn--plain">Kubernets</li>
+          <li class="skills__list-item btn btn--plain">Microsoft Excel</li>
+          <li class="skills__list-item btn btn--plain">Microsoft Sharepoint</li>
+          <li class="skills__list-item btn btn--plain">GitLab/GitHub</li>
+          <li class="skills__list-item btn btn--plain">Agile/Scrum</li>
+          <li class="skills__list-item btn btn--plain">Data Structures</li>
+          <li class="skills__list-item btn btn--plain">Testing Strategies</li>
 
         </ul>
       </section>
 
       <!-- Contact -->
       <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <a href="mailto:jains9089@gmail.com">
-          <span class="btn btn--outline">Email me</span>
-        </a>
+        <h2 class="section__title">Let's Connect</h2>
+        <div class="contact__btn">
+          <a href="mailto:jains9089@gmail.com">
+            <span class="btn btn--outline">Email me</span>
+          </a>
+        </div>
       </section>
+
     </main>
 
     <footer class="footer">
